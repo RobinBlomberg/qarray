@@ -1,6 +1,6 @@
 {
   "name": "@robinblomberg/qarray",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "",
   "type": "module",
   "main": "lib/index.js",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/RobinBlomberg/qarray#readme",
   "dependencies": {
-    "@robinblomberg/sqlite-compiler": "^0.2.5",
+    "@robinblomberg/sqlite-compiler": "^0.2.7",
     "meriyah": "^3.1.6"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "coverage:html": "c8 --report-dir .coverage --reporter=html --temp-directory .coverage/tmp npm test",
     "lint": "eslint **/*.{js,ts}",
     "lint:fix": "eslint **/*.{js,ts} --fix",
-    "test": "mocha ./{,!(node_modules)/**}**.test.js",
-    "test:dev": "mocha ./{,!(node_modules)/**}**.test.js --parallel --watch"
+    "test": "mocha ./{,!(node_modules)/**}**.test.js --reporter min",
+    "test:dev": "mocha ./{,!(node_modules)/**}**.test.js --parallel --reporter min --watch"
   }
 }
