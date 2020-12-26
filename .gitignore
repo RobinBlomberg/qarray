@@ -1,2 +1,4 @@
+.coverage
 .git
+.vscode
 node_modules
